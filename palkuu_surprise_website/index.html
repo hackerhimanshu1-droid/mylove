@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Palku ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--ink:#3d2630;--muted:#8c6873;--rose:#d85f7c;--rose2:#f4a0b4;--cream:#fff9f7;--paper:#fff;--line:#f0d9df;--shadow:0 18px 60px rgba(91,42,60,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 20% 10%,#ffe4eb 0,#fff7f6 38%,#fff 100%);color:var(--ink);font-family:'DM Sans',sans-serif}body{overflow-x:hidden}.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px 14px 50px;position:relative}.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.heart{position:absolute;opacity:.22;animation:float linear infinite;color:#d85f7c;font-size:18px}.app{position:relative;z-index:1;width:min(680px,100%)}.screen{display:none}.screen.active{display:block;animation:in .55s ease both}@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}.lock{background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border:1px solid rgba(216,95,124,.18);box-shadow:var(--shadow);border-radius:34px;padding:34px 22px 28px;text-align:center}.tiny{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}.lock-icon{width:82px;height:82px;margin:16px auto;border-radius:26px;background:#fff0f4;display:grid;place-items:center;font-size:34px;border:1px solid #f4ccd7}.title{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,12vw,72px);line-height:.9;margin:8px 0 12px}.sub{color:var(--muted);line-height:1.65;margin:0 auto;max-width:470px}.pin-dots{display:flex;justify-content:center;gap:13px;margin:25px 0 17px}.dot{width:14px;height:14px;border:2px solid var(--rose2);border-radius:50%;transition:.2s}.dot.on{background:var(--rose);border-color:var(--rose);transform:scale(1.1)}.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;max-width:310px;margin:0 auto}.key{height:56px;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;border:1px solid var(--line);border-radius:17px;background:#fff;font-size:20px;color:var(--ink);cursor:pointer}.key:active{transform:scale(.96);background:#fff0f4}.key.zero{grid-column:2}.key.back{font-size:14px;color:var(--muted)}.hint{font-size:12px;color:var(--muted);margin-top:17px}.wrong{min-height:20px;color:#c33e62;font-size:13px;margin-top:7px}.card{background:rgba(255,255,255,.92);border:1px solid rgba(216,95,124,.15);box-shadow:var(--shadow);border-radius:30px;padding:30px 23px}.progress{height:6px;background:#f6e5e9;border-radius:20px;overflow:hidden;margin-bottom:22px}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--rose2),var(--rose));transition:.5s}.qno{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:700}.question{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,8vw,52px);line-height:1.02;margin:10px 0 7px}.note{color:var(--muted);line-height:1.6;margin-bottom:20px}.choices{display:grid;gap:10px}.choice{border:1px solid var(--line);background:#fff8fa;border-radius:18px;padding:15px 16px;text-align:left;font:inherit;color:var(--ink);cursor:pointer;transition:.2s;min-height:50px}.choice:hover{border-color:var(--rose2);transform:translateY(-1px)}.choice.correct{background:#fff0f4;border-color:var(--rose);animation:pop .35s ease}.choice.wrong{background:#fff;border-color:#e7c6cf}.choice.selected{border-color:var(--rose);box-shadow:0 0 0 3px #fce0e7}.multi .choice{display:flex;gap:10px;align-items:center}.multi .choice::before{content:'♡';font-size:20px;color:var(--rose)}.multi .choice.selected::before{content:'♥'}.next{margin-top:18px;width:100%;border:0;border-radius:18px;padding:15px;background:var(--rose);color:white;font-weight:700;font-size:16px;cursor:pointer}.reaction{min-height:54px;margin-top:15px;border-radius:18px;background:#fff7f8;padding:13px 15px;line-height:1.5;color:#6e4c57}.story{background:linear-gradient(145deg,#fff,#fff3f6);border-radius:30px;padding:32px 24px;text-align:center;border:1px solid var(--line);box-shadow:var(--shadow)}.story h2{font-family:'Cormorant Garamond',serif;font-size:48px;line-height:.95;margin:10px 0}.story p{line-height:1.8;color:#745762}.quote{font-family:'Cormorant Garamond',serif;font-size:27px;margin:25px auto;max-width:500px}.divider{color:var(--rose);font-size:22px;margin:18px}.proposal{text-align:center;background:rgba(255,255,255,.94);border:1px solid #f0cbd5;border-radius:34px;padding:38px 20px;box-shadow:var(--shadow)}.proposal h1{font-family:'Cormorant Garamond',serif;font-size:clamp(54px,14vw,88px);line-height:.83;margin:12px 0}.date{font-weight:800;letter-spacing:.08em;font-size:18px;color:var(--rose)}.classified{margin:20px auto;padding:13px 16px;border:1px dashed #e2b5c1;border-radius:16px;width:min(330px,100%);color:#9b6c78;font-size:13px}.buttons{display:flex;justify-content:center;align-items:center;gap:15px;min-height:150px;margin-top:20px;position:relative}.yes{border:0;background:var(--rose);color:#fff;border-radius:18px;padding:17px 28px;font-weight:800;font-size:18px;cursor:pointer;box-shadow:0 10px 28px rgba(216,95,124,.25);transition:.25s}.no{border:1px solid var(--line);background:#fff;color:#7d606a;border-radius:18px;padding:15px 24px;font-weight:700;cursor:pointer;transition:.25s;transform-origin:center}.plea{height:30px;color:var(--rose);font-weight:700}.success{text-align:center;background:linear-gradient(145deg,#fff,#fff0f4);border-radius:34px;padding:38px 20px;box-shadow:var(--shadow);border:1px solid #f0cbd5}.success .big{font-family:'Cormorant Garamond',serif;font-size:clamp(60px,15vw,100px);line-height:.8;margin:10px}.success h2{font-family:'Cormorant Garamond',serif;font-size:45px;margin:12px 0}.briefing{margin:25px auto;max-width:440px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.briefing div{padding:10px 0;border-bottom:1px solid #f5e5e9}.briefing div:last-child{border-bottom:0}.label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);display:block}.value{font-weight:700;margin-top:3px}.music{position:fixed;right:14px;bottom:14px;z-index:5;border:1px solid #ecc5cf;background:rgba(255,255,255,.9);color:var(--ink);border-radius:999px;padding:11px 14px;cursor:pointer;box-shadow:0 8px 25px rgba(80,40,55,.12)}.small{font-size:12px}.hidden{display:none!important}.shake{animation:shake .35s ease}@keyframes shake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}@keyframes pop{50%{transform:scale(1.02)}}@media(max-width:420px){.card,.lock,.proposal,.success,.story{border-radius:25px;padding:25px 17px}.buttons{gap:9px}.yes{padding:15px 20px}.no{padding:13px 18px}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<button class="music" id="musicBtn" type="button">♫ <span id="musicText">play music</span></button>
+<main class="wrap"><div class="app">
+<section class="screen active" id="lockScreen">
+<div class="lock" id="lockCard">
+<div class="tiny">private • for palku only</div><div class="lock-icon">🔐</div>
+<h1 class="title">Palku's<br>little secret</h1>
+<p class="sub">This tiny world has been locked for one very specific person.</p>
+<div class="pin-dots" id="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="keypad" id="keypad">
+<button class="key" data-k="1">1</button><button class="key" data-k="2">2</button><button class="key" data-k="3">3</button>
+<button class="key" data-k="4">4</button><button class="key" data-k="5">5</button><button class="key" data-k="6">6</button>
+<button class="key" data-k="7">7</button><button class="key" data-k="8">8</button><button class="key" data-k="9">9</button>
+<button class="key back" data-k="back">delete</button><button class="key zero" data-k="0">0</button>
+</div>
+<div class="hint">Hint: the day we officially became <b>us</b>.</div><div class="wrong" id="pinMsg"></div>
+</div></section>
+
+<section class="screen" id="quizScreen"><div class="card">
+<div class="progress"><div class="bar" id="bar"></div></div><div class="qno" id="qno"></div><h2 class="question" id="question"></h2><p class="note" id="note"></p><div class="choices" id="choices"></div><div class="reaction" id="reaction" aria-live="polite"></div><button class="next hidden" id="next">continue ♡</button>
+</div></section>
+
+<section class="screen" id="storyScreen"><div class="story">
+<div class="tiny">one thing before the final question</div><h2>Look how weirdly<br>beautiful this became.</h2>
+<p class="quote">“Years ago, there was a little bit of hate. Then there was a secret crush. Then, somehow, there was us.”</p>
+<div class="divider">♡　♡　♡</div>
+<p>You talk softly. Your moods somehow have their own language — <i>nhiiii</i>, sleeping, scrolling, stressing. You get distant when you're irritated, and then you get shy and happy in ways I notice every single time.</p>
+<p>I tease you about scrolling. I get annoyed when you're busy and somehow don't know where your phone is. But somewhere in all those tiny things, you became someone I care about far more than I planned.</p>
+<p><b>Aas paas ke sbh log gande h, bas hum hi ache h.</b></p>
+<p>And yes... I know I confessed first. My feelings just took their time getting there.</p>
+<button class="next" id="toProposal">okay, one last question...</button>
+</div></section>
+
+<section class="screen" id="proposalScreen"><div class="proposal">
+<div class="tiny">important question • no pressure to pretend</div><h1>Palku...</h1><p class="sub">I have one evening I'd really like to spend with you.</p>
+<div class="date">22 • 09 • 2026</div><div class="classified">TIME: around <b>5:00 PM</b><br><br>LOCATION: <b>CLASSIFIED</b><br><span class="small">you'll find out when the time comes.</span></div>
+<p><b>Will you go on a date with me?</b></p><div class="plea" id="plea"></div><div class="buttons"><button class="yes" id="yes">YES ♡</button><button class="no" id="no">NO</button></div>
+</div></section>
+
+<section class="screen" id="successScreen"><div class="success">
+<div class="big">♡</div><div class="tiny">date status</div><h2>DATE ACCEPTED.</h2><p class="sub">I was hoping you'd say that.</p>
+<div class="briefing"><div><span class="label">date</span><span class="value">22 September 2026</span></div><div><span class="label">time</span><span class="value">Around 5:00 PM</span></div><div><span class="label">dress code</span><span class="value">Casual. Just come as you are.</span></div><div><span class="label">location</span><span class="value">Still classified.</span></div></div>
+<p class="quote">“Be ready. I'm taking you on a date.”</p><p>And Palku... don't ask for the location. Yet.</p>
+</div></section>
+</div></main>
+<script>
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const screens={lock:$('#lockScreen'),quiz:$('#quizScreen'),story:$('#storyScreen'),proposal:$('#proposalScreen'),success:$('#successScreen')};
+function show(name){Object.values(screens).forEach(x=>x.classList.remove('active'));screens[name].classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+for(let i=0;i<18;i++){const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✦'][i%3];h.style.left=(Math.random()*100)+'%';h.style.top=(80+Math.random()*25)+'%';h.style.animationDuration=(9+Math.random()*10)+'s';h.style.animationDelay=(-Math.random()*14)+'s';$('#hearts').appendChild(h)}
+let pin='';const correctPin='0606';let pinTimer=null;
+function enterPinDigit(k){
+  if(k==='back'){pin=pin.slice(0,-1);}
+  else if(/^[0-9]$/.test(k) && pin.length<4){pin+=k;}
+  updateDots();
+  $('#pinMsg').textContent='';
+  if(pin.length===4){
+    clearTimeout(pinTimer);
+    pinTimer=setTimeout(checkPin,120);
+  }
+}
+$$('#keypad .key').forEach(b=>{
+  b.addEventListener('click',e=>{e.preventDefault();enterPinDigit(b.dataset.k);});
+});
+document.addEventListener('keydown',e=>{
+  if(!$('#lockScreen').classList.contains('active')) return;
+  if(/^[0-9]$/.test(e.key)){e.preventDefault();enterPinDigit(e.key);}
+  else if(e.key==='Backspace'||e.key==='Delete'){e.preventDefault();enterPinDigit('back');}
+});
+function updateDots(){$$('#dots .dot').forEach((d,i)=>d.classList.toggle('on',i<pin.length))}
+function checkPin(){
+  if(pin===correctPin){show('quiz');renderQ();}
+  else{
+    $('#pinMsg').textContent='Hmm... that isn\'t the secret. Try again, Palku.';
+    $('#lockCard').classList.remove('shake');
+    void $('#lockCard').offsetWidth;
+    $('#lockCard').classList.add('shake');
+    setTimeout(()=>$('#lockCard').classList.remove('shake'),400);
+    pin='';updateDots();
+  }
+}
+const qs=[
+{q:'Where did we first meet?',n:'The place where the whole “us” story quietly started.',a:['At a café','On a trip','At the office','Somewhere in Chandigarh'],c:[2],r:'Correct. The office. And look at where we ended up.'},
+{q:'What was hiding in the past?',n:'Apparently someone had a tiny secret for years...',a:['You had a crush on me','You secretly wanted my snacks','You wanted to argue about systems forever','You were planning this website'],c:[0],r:'CAUGHT. You really were crushing on me. And years later, you finally told me.'},
+{q:'Where was our first kiss?',n:'No hints. You know this one.',a:['In the car','At the office','Your room','On a mountain'],c:[2],r:'Correct. Your room. I remember.'},
+{q:'Which trips belong in our memory hall of fame?',n:'Multiple answers are correct. Choose everything you think counts.',a:['Manali','Solan','Yula','Shimla','Delhi'],c:[1,2],multi:true,r:'Exactly. Solan AND Yula. I could not choose either, so both win.'},
+{q:'Who can scroll for suspiciously long periods of time?',n:'A completely unbiased scientific investigation.',a:['Me','Palku','Both of us','The phone itself'],c:[1],r:'The evidence is overwhelming. Palku.'},
+{q:'What happens when Palku is irritated?',n:'This one is based on highly classified observations.',a:['She becomes extra talkative','She starts dancing','She gets distant','She forgets how to say nhiiii'],c:[2],r:'Yep. Distant mode activated. I notice it every time.'}
+];
+let qi=0;let selected=[];
+function renderQ(){const q=qs[qi];selected=[];$('#qno').textContent=`question ${qi+1} of ${qs.length}`;$('#question').textContent=q.q;$('#note').textContent=q.n;$('#bar').style.width=((qi)/qs.length*100)+'%';$('#reaction').textContent='';$('#next').classList.add('hidden');const box=$('#choices');box.className='choices'+(q.multi?' multi':'');box.innerHTML='';q.a.forEach((txt,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=txt;b.addEventListener('click',()=>choose(i,b,q));box.appendChild(b)})}
+function choose(i,b,q){if(q.multi){b.classList.toggle('selected');selected.includes(i)?selected=selected.filter(x=>x!==i):selected.push(i);if(selected.length){$('#reaction').textContent='Good. Now make sure you got all the correct ones.';$('#next').classList.remove('hidden')}}else{ $$('#choices .choice').forEach(x=>x.disabled=true);if(q.c.includes(i)){b.classList.add('correct');$('#reaction').textContent=q.r;$('#next').classList.remove('hidden')}else{b.classList.add('wrong');$('#reaction').textContent='Nope. I know you know this. Try another answer.';$$('#choices .choice').forEach(x=>x.disabled=false)}}}
+$('#next').addEventListener('click',()=>{const q=qs[qi];if(q.multi){const ok=selected.length===q.c.length&&selected.every(x=>q.c.includes(x));if(!ok){$('#reaction').textContent='Almost. There are two correct answers here.';return}$('#reaction').textContent=q.r}qi++;if(qi<qs.length)renderQ();else show('story')});
+$('#toProposal').addEventListener('click',()=>show('proposal'));
+let noClicks=0;const no=$('#no'),yes=$('#yes'),plea=$('#plea');
+no.addEventListener('click',()=>{noClicks++;const scale=Math.max(.25,1-noClicks*.15);no.style.transform=`scale(${scale})`;const lines=['Wait... what?','Please say yesss.','Palku. Seriously?','That button is losing confidence.','I am choosing to believe you misclicked.','Palkuuuu 😭'];plea.textContent=lines[Math.min(noClicks-1,lines.length-1)];yes.style.transform=`scale(${1+Math.min(noClicks*.06,.36)})`;if(noClicks>=6){plea.textContent='Okay, okay. The NO button is now emotionally exhausted.'}});
+yes.addEventListener('click',()=>{show('success');celebrate()});
+function celebrate(){for(let i=0;i<28;i++){const h=document.createElement('span');h.textContent=i%2?'♥':'♡';h.style.position='fixed';h.style.left=(45+Math.random()*10)+'%';h.style.top='55%';h.style.zIndex='10';h.style.pointerEvents='none';h.style.fontSize=(14+Math.random()*22)+'px';h.style.color='#d85f7c';h.style.transition='transform 1.2s ease,opacity 1.2s ease';document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform=`translate(${(Math.random()-.5)*420}px,${-120-Math.random()*300}px) rotate(${Math.random()*180-90}deg)`;h.style.opacity='0'});setTimeout(()=>h.remove(),1300)}}
+let audio=null,playing=false;$('#musicBtn').addEventListener('click',()=>{if(!audio){audio=new Audio('assets/our-song.mp3');audio.loop=true;audio.volume=.45;audio.addEventListener('error',()=>$('#musicText').textContent='add our-song.mp3')}if(playing){audio.pause();playing=false;$('#musicText').textContent='play music'}else{audio.play().then(()=>{playing=true;$('#musicText').textContent='playing ♫'}).catch(()=>$('#musicText').textContent='tap again')}});
+})();
+</script>
+</body></html>
